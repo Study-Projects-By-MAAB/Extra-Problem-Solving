@@ -9,7 +9,9 @@ C...m returns 'Caught!' <-- as there are three characters between the two, the c
 */
 
 const x = 'C...m'
+const y = 'C....m'
 console.log(catMouse(x));
+console.log(catMouse(y));
 function catMouse(x) {
     if (x.indexOf('m') - 4 <= x.indexOf('C')) {
         return 'Caught!'
