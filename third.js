@@ -28,6 +28,10 @@ function caughtMouse(x, j) {
     if (x.indexOf('D') < x.indexOf('C') && x.indexOf('D') > x.indexOf('m')) {
         return "Protected!"
     }
+    if (x.indexOf('D') > x.indexOf('C') && x.indexOf('D') < x.indexOf('m')) {
+        return "Protected!"
+    }
+
     if (j = 5) {
         if (x.indexOf('C') < x.indexOf('m')) {
             if ((x.indexOf('m') - x.indexOf('C')) <= j + 1) {
