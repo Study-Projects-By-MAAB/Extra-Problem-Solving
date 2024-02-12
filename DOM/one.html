@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>one</title>
+</head>
+
+<body>
+    <h1>Trying To Practice DOM</h1>
+    <ul id="listContainer">
+        <h4>This is some list</h4>
+        <li class="item">Lorem, ipsum dolor.</li>
+        <li class="item">Quod, voluptatem expedita!</li>
+        <li class="item">Accusamus, nihil rem.</li>
+        <li class="item">Assumenda, corporis soluta.</li>
+        <li class="item">Voluptates, voluptas sunt.</li>
+        <li class="item">Unde, repellat rem!</li>
+    </ul>
+    <input id="textInput" type="text">
+    <button id="btnAdd">Add item</button>
+
+    <script>
+        const listContainer = document.getElementById('listContainer');
+        const item = document.getElementsByClassName('item');
+        listContainer.addEventListener('click', function () {
+            if (event.target.classList.contains('item')) {
+                if (event.target.style.visibility === '') {
+                    event.target.style.visibility = 'hidden'
+                }
+                else {
+                    event.target.style.visibility = ''
+                }
+            }
+        })
+        const buttonADD = document.getElementById('btnAdd');
+        const textInput = document.getElementById('textInput');
+        buttonADD.addEventListener('click', function () {
+            const text = textInput.value;
+            const li = document.createElement('li');
+            li.classList.add('item')
+            li.innerText = text
+            listContainer.appendChild(li)
+            textInput.value = ''
+        })        
+    </script>
+</body>
+
+</html>
