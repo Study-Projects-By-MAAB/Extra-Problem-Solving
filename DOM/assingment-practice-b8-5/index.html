@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Product Choice</title>
+</head>
+
+<body class="">
+    <main class="bg-[#f8f8f8] min-h-screen">
+        <section class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 mt-11 w-[90%] mx-auto">
+            <!-- products container -->
+            <div class=" grid grid-cols-1 *:w-full md:grid-cols-2 lg:grid-cols-3 gap-5 md:col-span-2 lg:col-span-3">
+                <!-- product 1 -->
+                <div class="card w-[342px] bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes"
+                            class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <div class="rating">
+                            <input type="radio" name="rating-1" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-1" class="mask mask-star-2 bg-orange-400" checked />
+                            <input type="radio" name="rating-1" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-1" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-1" class="mask mask-star-2 bg-orange-400" />
+                        </div>
+                        <h2 class="card-title">K. Accessories</h2>
+                        <p>39.00 TK</p>
+                        <div class="card-actions">
+                            <!-- <button class="btn btn-primary">Buy Now</button> -->
+                        </div>
+                    </div>
+                </div>
+                <!-- product 2 -->
+                <div class="card w-[342px] bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes"
+                            class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <div class="rating">
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        </div>
+                        <h2 class="card-title">K. Accessories</h2>
+                        <p>25.00 TK</p>
+                        <div class="card-actions">
+                            <!-- <button class="btn btn-primary">Buy Now</button> -->
+                        </div>
+                    </div>
+                </div>
+                <!-- product 3 -->
+                <div class="card w-[342px] bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes"
+                            class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <div class="rating">
+                            <input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400" checked />
+                            <input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400" />
+                        </div>
+                        <h2 class="card-title">Home Cooker</h2>
+                        <p>49.00 TK</p>
+                        <div class="card-actions">
+                            <!-- <button class="btn btn-primary">Buy Now</button> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- side cart -->
+            <div>
+                <div class="w-[342px] h-[148px] flex flex-col gap-6">
+                    <div class="card flex flex-col gap-4 bg-base-100 shadow-xl p-6">
+                        <h3 class="font-medium text-2xl">Have coupon?</h3>
+                        <div class="flex items-center">
+                            <input class="px-[22px] py-[16px] w-[194px]" placeholder="Coupon code" type="text">
+                            <button class="px-[22px] py-[16px] rounded-r-[8px] text-white bg-[#E527B2]">Apply</button>
+                        </div>
+                    </div>
+                    <div class="card flex flex-col gap-4 bg-base-100 shadow-xl p-6">
+                        <ol id="ol-list" class="font-medium text-2xl list-decimal mb-2">
+                        </ol>
+                        <hr>
+                        <div class="flex flex-col ">
+                            <div class="mb-6 mt-3">
+                                <h3 class="font-medium text-2xl">Total Price: <span
+                                        class="text-[rgba(17,17,17,0.5)]"><span>0</span>Tk</span></h3>
+                                <h3 class="font-medium text-2xl">Discount: <span
+                                        class="text-[rgba(17,17,17,0.5)]"><span>0</span>Tk</span></h3>
+                                <h3 class="font-medium text-2xl">Total: <span
+                                        class="text-[rgba(17,17,17,0.5)]"><span>0</span>Tk</span></h3>
+                            </div>
+                            <hr>
+                            <button class="mt-6 px-[22px] py-[16px] rounded-[8px] text-white bg-[#E527B2]">Make
+                                Purchase</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
