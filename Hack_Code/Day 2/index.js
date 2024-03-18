@@ -1,5 +1,4 @@
-/* Next Day Problem
-
+/* 
 Problem : 
 Find the palindrome of a given string/number
 
